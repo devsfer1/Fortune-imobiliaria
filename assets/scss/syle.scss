@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+   
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding: 40px 0 30px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        font-size: 24px;
+        color: black;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        list-style: none;
+        margin: 0 0 0 15px;
+    }
+
+    &__link {
+        color: black;
+    }   
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/images/home-img.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
