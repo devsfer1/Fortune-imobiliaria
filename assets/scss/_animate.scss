@@ -1,0 +1,30 @@
+/* === Animate on Scroll === */
+[data-anime] {
+    opacity: 0;    
+    transition: ease .6s;
+    transition-delay: 0.4s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-60px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(60px, 0, 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -60px, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 60px, 0);
+}
+
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+

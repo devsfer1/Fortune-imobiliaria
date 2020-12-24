@@ -1,0 +1,4 @@
+- criar logo melhor 
+- adicionar mais espaço nav
+- tirar container da home e deixar tudo linear
+- mudar cores nav
