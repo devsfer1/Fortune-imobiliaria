@@ -7,6 +7,7 @@
 
     <!-- Estilização -->
     <link rel="stylesheet" href="assets/css/syle.css">
+    <link rel="stylesheet" href="node_modules/tiny-slider/dist/tiny-slider.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,11 +28,34 @@
             </nav>
         </div>
     </header>   
-    <section class="home" id="home">
-        <div class="home__load"></div>
+    <section class="home slider" id="home">
+        <div class="home__background home__background--1"></div>
+        <div class="home__background home__background--2"></div>
+        <div class="home__background home__background--3"></div>
+        <div class="home__background home__background--4"></div>
+        <div class="home__background home__background--5"></div>
+        <div class="home__background home__background--6"></div>
     </section>
 
     <!-- Script -->
     <script src="assets/script.js"></script>
+    <script type="module">
+        import {tns} from '/node_modules/tiny-slider/src/tiny-slider.js';
+      
+        var slider = tns({
+          container: '.slider',
+          "items": 1,
+          "center": false,
+          "mouseDrag": false,
+          "loop": true,
+          "controls" : false,
+          "autoplay": true,
+          "autoplayTimeout": 3500,
+          "autoplayButtonOutput": false,
+          "nav": false,
+          "swipeAngle": false,
+          "speed": 300,
+        });
+        </script>
 </body>
 </html>
