@@ -55,6 +55,28 @@ a {
 }
 
 .home {
+    position: relative; 
+
+    &__content {
+        position: absolute;
+        z-index: 999;
+        padding: 160px 70px 0 70px;
+        
+    }
+
+    &__title {
+        font-size: 46px;
+        line-height: 1.5;
+        color: #fff;  
+        max-width: 40rem; 
+        margin: 0 0 15px 0;        
+    }
+
+    &__paragraph {
+        color: darken($color: #fff, $amount: 20);
+        max-width: 35rem; 
+        line-height: 1.7;
+    }
 
     &__background {
         background-repeat: no-repeat;
@@ -87,8 +109,9 @@ a {
     &__background--6 {
         background-image: url(/assets/images/home-img-6.png);
     }
-    
+
 }
+
 
 
 
