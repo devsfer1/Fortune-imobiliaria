@@ -28,3 +28,36 @@
 }
 
 
+/* === Animation Bars === */
+.nav__burger::before,
+    .nav__burger::after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 3px;
+        background-color:  black;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+}
+
+.nav__burger::before {
+    transform: translateY(-7px);
+}
+
+.nav__burger::after {
+    transform: translateY(7px);
+}
+
+.nav__bars.open .nav__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav__bars.open .nav__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.nav__bars.open .nav__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
