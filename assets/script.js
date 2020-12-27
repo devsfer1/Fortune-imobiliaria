@@ -10,21 +10,28 @@ var menuBtn = document.querySelector('.nav__bars'),
 
 
 //Eventos
+menuBtn.addEventListener('click', btnAnimation);
+menuBtn.addEventListener('click', ativarNavbar);
 window.addEventListener('scroll', stickyNav);
+
+
 if(dataAnime.length) {
     window.addEventListener('scroll', animeScroll);
     console.log('teste');
 }
 
+//Sticky nav top
+
 //Sticky nav
 function stickyNav() {
     header.classList.toggle('sticky', window.scrollY > 20);
+    menuBtn.style.color = 'black';
 };
 
 //Ativar nav
 function ativarNavbar() {
     navList.classList.toggle('hidden');
-    header.style.backgroundColor = '#fafffb';
+
 };
 
 //Animação menu bars
@@ -50,3 +57,6 @@ function animeScroll() {
 
 
 animeScroll();
+console.log(window.innerHeight);
+console.log(window.scrollY);
+
