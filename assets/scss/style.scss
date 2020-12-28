@@ -93,7 +93,7 @@ a {
     }
 
     &__burger--sticky {
-        background-color: black;    
+        background-color: #509E87;    
     }
 }
 
@@ -108,7 +108,7 @@ a {
 .home {
     position: relative; 
     height: 100vh;
-    margin: 0 0 150px 0;
+    
          
 
     &__content {
@@ -201,6 +201,37 @@ a {
         text-align: center;
         display: flex;
         align-items: center;
+    }
+}
+
+/* === About === */
+.about {
+    padding: 150px 0 110px 0;
+    margin: 0 0 40px 0;
+    background-color: #F5F5F5;
+
+    &__container {
+        display: flex;
+    }
+
+    &__title {
+        max-width: 70%;
+        margin: 0 0 20px 0;
+        font-size: 28px;
+        color: lighten($color: #000000, $amount: 15);
+    }
+
+    &__paragraph {
+        line-height: 1.9;
+        color: lighten($color: #000000, $amount: 35);
+        max-width: 90%;
+    }
+
+    &__img {
+        margin: 0 25px 0 0;
+        border-radius: 5px;
+        max-width: 450px;
+        object-fit: cover;
     }
 }
 
