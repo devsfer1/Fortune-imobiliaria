@@ -1,7 +1,9 @@
 const dataAnime = document.querySelectorAll('[data-anime]');
 const animate =  'animate';
+//Variaveis Header
 var menuBtn = document.querySelector('.nav__bars'),
     burger = document.querySelector('.nav__burger'),
+    navLogo = document.querySelector('.nav__logo'),
     navList = document.querySelector('.nav__list'),
     navbar = document.querySelector('.nav'),
     header = document.querySelector('#header'),
@@ -17,7 +19,6 @@ window.addEventListener('scroll', stickyNav);
 
 if(dataAnime.length) {
     window.addEventListener('scroll', animeScroll);
-    console.log('teste');
 }
 
 //Sticky nav top
@@ -25,7 +26,20 @@ if(dataAnime.length) {
 //Sticky nav
 function stickyNav() {
     header.classList.toggle('sticky', window.scrollY > 20);
-    menuBtn.style.color = 'black';
+    //Mudando cores items nav
+    if(window.scrollY > 20) {
+        navLogo.style.color = '#292929';
+        for(var i = 0; i < navLink.length; i++) {
+            navLink[i].style.color = '#292929';
+            navbar.style.padding = '25px 0';
+        }
+    } else {
+        navLogo.style.color = '';
+        navbar.style.padding = '';
+        for(var i = 0; i < navLink.length; i++) {
+            navLink[i].style.color = '';
+        }
+    }
 };
 
 //Ativar nav
@@ -57,6 +71,5 @@ function animeScroll() {
 
 
 animeScroll();
-console.log(window.innerHeight);
-console.log(window.scrollY);
+
 
