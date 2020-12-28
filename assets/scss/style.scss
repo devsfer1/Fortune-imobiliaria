@@ -76,6 +76,10 @@ a {
         background-color: #fff;
         border-radius: 5px;
     }
+
+    &__burger--sticky {
+        background-color: black;    
+    }
 }
 
 .sticky {

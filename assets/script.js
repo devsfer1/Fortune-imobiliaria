@@ -29,6 +29,8 @@ function stickyNav() {
     //Mudando cores items nav
     if(window.scrollY > 20) {
         navLogo.style.color = '#292929';
+        burger.classList.add('burger--sticky');
+        burger.classList.add('nav__burger--sticky');
         for(var i = 0; i < navLink.length; i++) {
             navLink[i].style.color = '#292929';
             navbar.style.padding = '25px 0';
@@ -36,6 +38,8 @@ function stickyNav() {
     } else {
         navLogo.style.color = '';
         navbar.style.padding = '';
+        burger.classList.remove('nav__burger--sticky');
+        burger.classList.remove('burger--sticky');
         for(var i = 0; i < navLink.length; i++) {
             navLink[i].style.color = '';
         }

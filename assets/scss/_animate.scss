@@ -35,10 +35,15 @@
         position: absolute;
         width: 22px;
         height: 3px;
-        background-color:  #fff;
+        background-color:  #ffff;
         border-radius: 5px;
         transition: all .3s ease-in-out;
 }
+
+.nav__burger--sticky::before,
+    .nav__burger--sticky::after {
+        background-color:  black; 
+    }
 
 .nav__burger::before {
     transform: translateY(-7px);
