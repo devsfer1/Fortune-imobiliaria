@@ -55,6 +55,7 @@
 
 @media screen and (max-width: 600px) {
     .home {
+        margin: 0 0 70px 0;
 
         &__background {
             height: 100vh;
@@ -141,11 +142,17 @@
         &__title {
             max-width: 95%;
             font-size: 26px;
+            order: 1;
+        }
+
+        &__img {
+            order: 2;
         }
 
         &__paragraph {
             font-size: 14px;
             max-width: 100%;
+            order: 3;
         }
     }
 }

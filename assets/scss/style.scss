@@ -108,6 +108,7 @@ a {
 .home {
     position: relative; 
     height: 100vh;
+    margin: 0 0 160px 0;
     
          
 
@@ -212,6 +213,7 @@ a {
 
     &__container {
         display: flex;
+        
     }
 
     &__title {
@@ -224,7 +226,7 @@ a {
     &__paragraph {
         line-height: 1.9;
         color: lighten($color: #000000, $amount: 35);
-        max-width: 90%;
+        max-width: 80%;
     }
 
     &__img {
