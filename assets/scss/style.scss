@@ -93,6 +93,7 @@ a {
 .home {
     position: relative; 
     height: 100vh;
+    margin: 0 0 150px 0;
          
 
     &__content {
@@ -188,6 +189,70 @@ a {
     }
 }
 
+/* === Locations === */
+.locations {
+
+    &__title {
+        max-width: 30%;
+        line-height: 1.8;
+        font-size: 32px;
+        color: lighten($color: #000000, $amount: 15);
+        margin: 0 0 30px 0;
+    }
+
+    &__item {
+        margin: 0 15px 0 0;
+    }
+
+    &__img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.locations .tns-controls {
+    margin-left: 75%;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.locations .tns-controls button {
+    appearance: none;
+}
+
+.prev-button {
+    border: solid #454343;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+    margin: 0 0 20px 0;
+    transition: ease 0.2s;
+}
+
+.next-button:hover {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+}
+
+.prev-button:hover {
+    border: solid black;   
+    border-width: 0 3px 3px 0;
+}
+
+.next-button {
+    border: solid #454343;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin: 0 0 20px 80px;
+    transition: ease 0.2s;
+
+}
 
 
 

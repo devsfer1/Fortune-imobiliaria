@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
@@ -30,12 +31,13 @@
                 </ul>
             </nav>
         </div>
-    </header>   
+    </header>  
+    <!-- Home --> 
     <section class="home" id="home">
         <div class="home__content">
             <h1 class="home__title" data-anime="left">Encontre um local seguro e bem localizado para você e sua família.</h1>
             <p class="home__paragraph" data-anime="left">Nós oferecemos dezenas de ótimos lugares para alugar e comprar, venha dar uma olhada hoje mesmo.</p>
-            <div class="search">
+            <div class="search" data-anime="left">
                 <div class="search__item">
                     <h3 class="search__title">Local</h3>    
                     <p class="search__description">São Paulo</p>    
@@ -60,6 +62,30 @@
             <div class="home__background home__background--6"></div>
         </div>
     </section>
+    <!-- Locations --> 
+    <div class="container">
+        <section class="locations" id="locations">
+            <h2 class="locations__title" data-anime="top">Veja os melhores aluguéis perto de você.</h2>
+            <div class="locations__slider">
+                <div class="locations__item" data-anime="bottom">
+                    <img src="assets/images/location-1.jpg" alt="" class="locations__img">
+                </div>
+                <div class="locations__item" data-anime="bottom">
+                    <img src="assets/images/location-2.jpg" alt="" class="locations__img">
+                </div>
+                <div class="locations__item" data-anime="bottom">
+                    <img src="assets/images/location-3.jpg" alt="" class="locations__img">
+                </div>
+                <div class="locations__item" data-anime="bottom">
+                    <img src="assets/images/location-4.jpg" alt="" class="locations__img">
+                </div>
+                <div class="locations__item" data-anime="bottom">
+                    <img src="assets/images/location-5.jpg" alt="" class="locations__img">
+                </div>
+            </div>
+        </section>
+    </div>
+    
     
 
     <!-- Script -->
@@ -77,6 +103,21 @@
           "controls" : false,
           "autoplay": true,
           "autoplayTimeout": 3500,
+          "autoplayButtonOutput": false,
+          "nav": false,
+          "swipeAngle": false,
+          "speed": 300,
+          "lazyload": true
+        });
+
+        var slider = tns({
+          container: '.locations__slider',
+          "items": 4,
+          "center": false,
+          "mouseDrag": true,
+          "loop": false,
+          "controls" : true,
+          "autoplay": false,
           "autoplayButtonOutput": false,
           "nav": false,
           "swipeAngle": false,

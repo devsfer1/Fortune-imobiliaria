@@ -28,7 +28,7 @@ function stickyNav() {
     header.classList.toggle('sticky', window.scrollY > 20);
     //Mudando cores items nav
     if(window.scrollY > 20) {
-        navLogo.style.color = '#292929';
+        navLogo.style.color = '#599e8e';
         burger.classList.add('burger--sticky');
         burger.classList.add('nav__burger--sticky');
         for(var i = 0; i < navLink.length; i++) {

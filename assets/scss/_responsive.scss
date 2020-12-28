@@ -18,7 +18,7 @@
 
         &__link {
             line-height: 60px;
-            color: #000000;
+            color: #2b2b2b;
         }
 
         &__bars {
@@ -51,18 +51,28 @@
 @media screen and (max-width: 600px) {
     .home {
 
+        &__background {
+            height: 100vh;
+        }
+
         &__content {
             max-width: 90%;
+            top: 20%;
         }
 
         &__title {
             font-size: 28px;
             line-height: 1.4;
+            margin: 0 0 25px 0;
+        }
+
+        &__paragraph {
+            margin: 0 0 40px 0; 
         }
     }
 
     .search {
-        width: 80%;
+        width: 90%;
         height: 150px;
         padding: 20px 10px;
         flex-wrap: wrap;
@@ -81,6 +91,15 @@
             flex: 60%;
             height: 50%;
             text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .home {
+
+        &__title {
+            font-size: 24px;
         }
     }
 }
