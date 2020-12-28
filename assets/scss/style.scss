@@ -217,16 +217,71 @@ a {
         color: darken($color: #fff, $amount: 45);
     }
 
+    &__button {
+        border: solid #454343;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 6px;  
+        transition: ease 0.2s;
+    }
+
+    &__button:hover {
+        border: solid black;
+        border-width: 0 3px 3px 0;    
+    }
+
+    &__button--prev {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        margin: 0 0 20px 0;
+    }
+
+    &__button--next {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        margin: 0 0 20px 60px;
+    }
+
     &__item {
-        margin: 0 15px 40px 0;
+        margin: 0 15px 70px 0;
     }
 
     &__img {
-        width: 300px;
+        width: 100%;
         height: 200px;
         object-fit: cover;
         border-radius: 3px;
         box-shadow: 0 3px 3px 0 rgba(0,0,0,0.5);
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        padding: 3px;
+    }
+
+    &__icon {
+        font-size: 13px;
+        color: lighten($color: #000000, $amount: 20);
+    }
+
+    &__icon i {
+        font-size: 14px;
+        color: darken($color: #fff, $amount: 25);
+    }
+
+    &__number {
+        font-size: 13px;
+        color: darken($color: #fff, $amount: 40);
+    }
+
+    &__address,
+    &__description {
+        font-size: 13px;  
+    }
+
+    &__description {
+        font-weight: 600;
     }
 }
 
@@ -238,42 +293,8 @@ a {
 
 .locations .tns-controls button {
     appearance: none;
+    background: none;
 }
-
-.prev-button {
-    border: solid #454343;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 6px;
-    transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-    margin: 0 0 20px 0;
-    transition: ease 0.2s;
-}
-
-.next-button:hover {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-}
-
-.prev-button:hover {
-    border: solid black;   
-    border-width: 0 3px 3px 0;
-}
-
-.next-button {
-    border: solid #454343;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 6px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    margin: 0 0 20px 80px;
-    transition: ease 0.2s;
-
-}
-
-
 
 
 
