@@ -66,7 +66,26 @@
     <div class="container">
         <section class="locations" id="locations">
             <h2 class="locations__title" data-anime="top">Veja os melhores aluguéis perto de você.</h2>
+            <h3 class="locations__subtitle">São Paulo/SP</h3>
             <div class="locations__slider">
+                <div class="locations__item" data-anime="bottom">
+                    <img src="assets/images/location-1.jpg" alt="" class="locations__img">
+                </div>
+                <div class="locations__item" data-anime="bottom">
+                    <img src="assets/images/location-2.jpg" alt="" class="locations__img">
+                </div>
+                <div class="locations__item" data-anime="bottom">
+                    <img src="assets/images/location-3.jpg" alt="" class="locations__img">
+                </div>
+                <div class="locations__item" data-anime="bottom">
+                    <img src="assets/images/location-4.jpg" alt="" class="locations__img">
+                </div>
+                <div class="locations__item" data-anime="bottom">
+                    <img src="assets/images/location-5.jpg" alt="" class="locations__img">
+                </div>
+            </div>
+            <h3 class="locations__subtitle">Guarulhos/SP</h3>
+            <div class="locations__slider--2">
                 <div class="locations__item" data-anime="bottom">
                     <img src="assets/images/location-1.jpg" alt="" class="locations__img">
                 </div>
@@ -122,7 +141,53 @@
           "nav": false,
           "swipeAngle": false,
           "speed": 300,
-          "lazyload": true
+          "lazyload": true,
+          "responsive": {
+              "1300": {
+                "items": 4  
+              },
+              "960": {
+                  "items": 3
+              },
+              "580": {
+                "items": 2,
+                "dots": true
+              },
+              "100": {
+                  "items": 1,
+              }
+              
+          }
+        });
+        var slider = tns({
+          container: '.locations__slider--2',
+          "items": 4,
+          "center": false,
+          "mouseDrag": true,
+          "loop": false,
+          "controls" : true,
+          "autoplay": false,
+          "autoplayButtonOutput": false,
+          "nav": false,
+          "swipeAngle": false,
+          "speed": 300,
+          "lazyload": true,
+          "responsive": {
+              "1300": {
+                "items": 4  
+              },
+              "960": {
+                  "items": 3
+              },
+              "580": {
+                "items": 2,
+                "dots": true
+              },
+              "100": {
+                  "items": 1,
+              }
+              
+          }
         });
     </script>
 </body>

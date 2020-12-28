@@ -6,6 +6,10 @@
 
 }
 
+body {
+    background-color: #fff;
+}
+
 .container {
     max-width: 90%;
     margin: 0 auto;
@@ -191,17 +195,30 @@ a {
 
 /* === Locations === */
 .locations {
+    background-color: #fff;
 
     &__title {
         max-width: 30%;
         line-height: 1.8;
         font-size: 32px;
         color: lighten($color: #000000, $amount: 15);
-        margin: 0 0 30px 0;
+        margin: 0 0 60px 0;
+    }
+
+    &__title::after {
+        content: '';
+        height: 2px;
+        background-color: black;
+        width: 50%;
+        display: block;
+    }
+
+    &__subtitle {
+        color: darken($color: #fff, $amount: 45);
     }
 
     &__item {
-        margin: 0 15px 0 0;
+        margin: 0 15px 40px 0;
     }
 
     &__img {
