@@ -25,6 +25,10 @@
             display: flex;
         }
 
+        &__burger {
+            height: 2px;   
+        }
+
         .hidden {
             visibility: hidden;
             opacity: 0;

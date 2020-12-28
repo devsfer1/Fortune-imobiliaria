@@ -35,6 +35,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 40px 0 0 0;
     
 
@@ -44,6 +45,16 @@ a {
         font-weight: 600;
         letter-spacing: 0.05rem;
         color: #fff;
+    }
+
+    &__logo img {
+        width: 150px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    &__img--hidden {
+        display: none;
     }
 
     &__list {
