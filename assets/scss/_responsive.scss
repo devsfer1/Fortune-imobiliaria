@@ -38,7 +38,7 @@
     .home {
         
         &__content {
-            padding: 160px 0px 0 40px;
+            
             max-width: 80%;
         }
     
@@ -52,13 +52,21 @@
     .home {
 
         &__content {
-            padding: 160px 0px 0 20px;
             max-width: 90%;
         }
 
         &__title {
             font-size: 28px;
             line-height: 1.4;
+        }
+    }
+}
+
+@media screen and (max-height: 425px) {
+    .home {
+
+        &__background {
+            height: 150vh;
         }
     }
 }
