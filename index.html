@@ -64,7 +64,7 @@
 
     <!-- Script -->
     <script rel="preload" src="assets/script.js" as="script"></script>
-    <script type="module">
+    <script rel="preload" type="module" as="script">
         import {tns} from '/node_modules/tiny-slider/src/tiny-slider.js';
       
         var slider = tns({
@@ -83,6 +83,6 @@
           "speed": 300,
           "lazyload": true
         });
-        </script>
+    </script>
 </body>
 </html>
