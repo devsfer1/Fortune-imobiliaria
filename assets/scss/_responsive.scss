@@ -110,14 +110,6 @@
     }
 }
 
-@media screen and (max-height: 425px) {
-    .home {
-
-        &__background {
-            height: 150vh;
-        }
-    }
-}
 
 /* === About === */
 @media screen and (max-width: 1125px) {
@@ -208,5 +200,17 @@
 
     .locations .tns-controls {
         margin: 0 auto;
+    }
+}
+
+
+
+/* === Adjust Portrait === */
+@media screen and (max-height: 425px) {
+    .home {
+
+        &__background {
+            height: 150vh;
+        }
     }
 }
