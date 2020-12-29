@@ -501,8 +501,7 @@ a {
 /* === Contact === */
 .contact {
     background-color: darken($color: #F5F5F5, $amount: 3);
-    
-    padding: 20px;
+    padding: 20px 0 60px 0;
 
     &__container {
         display: flex;
@@ -617,6 +616,26 @@ a {
             cursor: pointer;
             margin: 0 15px 0 0;
         }
+    }
+}
+
+/* === Footer === */
+.footer {
+    height: 80px;
+    background-color: darken($color: #5BC0A9, $amount: 50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__copy {
+        color: #fff;
+        font-size: 19px;
+        text-align: center;
+    }
+
+    &__link {
+        color: darken($color: #fff, $amount: 20);
+        text-decoration: underline
     }
 }
 
