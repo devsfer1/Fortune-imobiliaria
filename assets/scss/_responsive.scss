@@ -110,7 +110,6 @@
             height: 110vh;   
         }
     }
-}
 
 
 /* === Locations === */
@@ -341,13 +340,51 @@
 
 
 /* === Adjust Portrait === */
-@media screen and (max-height: 425px) {
+
+/* === Home === */
+@media screen and (max-height: 600px) {
     .home {
+        margin: 0 0 140px 0;
 
         &__background {
-            height: 140vh;
-            
+            height: 115vh;
         }
     }
 }
+
+@media screen and (max-height: 400px) {
+    .home {
+        margin: 0 0 245px 0;
+
+        &__content {
+            top: 35%;
+            left: 5%;
+        }
+
+        &__background {
+            height: 160vh;
+        }
+    }    
+}
+
+@media screen and (max-height: 300px) {
+    .home {
+        margin: 0 0 265px 0;
+
+        &__background {
+            height: 190vh;    
+        }
+    }
+} 
+
+/* === Locations === */
+@media screen and (max-height: 600px) {
+    .locations {
+
+        &__title {
+            margin: 0 0 30px 0;
+        }
+    }
+}
+
 
