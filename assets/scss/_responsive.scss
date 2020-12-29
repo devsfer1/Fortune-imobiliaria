@@ -55,14 +55,14 @@
         }
     
         &__title {
-            font-size: 36px; 
+            font-size: 2.25rem; 
         }
     }
 }
 
 @media screen and (max-width: 600px) {
     .home {
-        margin: 0 0 70px 0;
+        margin: 0 0 4.375em 0;
 
         &__background {
             height: 100vh;
@@ -74,13 +74,13 @@
         }
 
         &__title {
-            font-size: 28px;
+            font-size: 1.75rem;
             line-height: 1.4;
-            margin: 0 0 25px 0;
+            margin: 0 0 1.563em 0;
         }
 
         &__paragraph {
-            margin: 0 0 40px 0; 
+            margin: 0 0 2.5em 0; 
         }
     }
 
@@ -92,12 +92,12 @@
             flex-wrap: wrap;
 
         &__title {
-            font-size: 14px;
+            font-size: 0.875rem;
         }
 
         &__description {
-            font-size: 14px;
-            margin: 0 0 10px 0;
+            font-size: 0.875rem;
+            margin: 0 0 0.625em 0;
         }
 
         &__btn {
@@ -113,7 +113,7 @@
 
 @media screen and (max-width: 320px) {
         &__title {
-            font-size: 24px;
+            font-size: 1.5rem;
         }
 
         &__background {
@@ -159,11 +159,11 @@
     }
 
         &__title {
-            margin: 0 0 30px 0;
+            margin: 0 0 1.875em 0;
         }
 
         &__img {
-            margin: 0 20px 15px 0;
+            margin: 0 1.25em 0.938em 0;
         }
 
         &__paragraph {
@@ -175,20 +175,20 @@
 @media screen and (max-width: 800px) {
     .about {
 
-        padding: 60px 0 80px 0;
+        padding: 3.75em 0 5em 0;
 
         &__title {
             max-width: 100%;
-            font-size: 24px;
+            font-size: 1.5rem;
             line-height: 1.6;
         }
 
         &__img {
-            margin: 0 0 15px 0;
+            margin: 0 0 0.938em 0;
         }
 
         &__paragraph {
-            font-size: 14px;
+            font-size: 0.875rem;
             max-width: 100%;
         }
     }
@@ -212,14 +212,14 @@
         width: 100%;
 
         &__title {
-            font-size: 26px;
+            font-size: 1.625rem;
             max-width: 100%;  
-            margin: 0 auto 30px auto;
+            margin: 0 auto 1.875em auto;
             line-height: 1.6;
         }
 
         &__subtitle {
-            margin: 0 0 25px 0;
+            margin: 0 0 1.563em 0;
         }
 
         &__button {
@@ -227,7 +227,7 @@
         }
 
         &__button--next {
-            margin: 0 0 20px 30px;
+            margin: 0 0 1.25em 1.875em;
         }
     }
 
@@ -252,7 +252,7 @@
     .blog {
 
         &__title {
-            font-size: 26px;   
+            font-size: 1.625rem;   
         }
 
         &__container {
@@ -266,7 +266,7 @@
             height: auto;
 
             &__btn {
-                margin: 0 auto 15px auto;
+                margin: 0 auto 0.938em auto;
             }
         }
 
@@ -317,7 +317,7 @@
     .footer {
 
         &__copy {
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
 }
@@ -326,7 +326,7 @@
     .footer {
 
         &__copy {
-            font-size: 12px;
+            font-size: 0.75rem;
         }
     }
 }
@@ -336,7 +336,7 @@
         padding: 0;
 
         &__title {
-            font-size: 26px;          
+            font-size: 1.625rem;          
         }
 
         .form {
@@ -350,7 +350,7 @@
             }
 
             &__item {
-                margin: 0 0 20px 0;
+                margin: 0 0 1.25em 0;
             }
 
             &__label {
@@ -371,7 +371,7 @@
 /* === Home === */
 @media screen and (max-height: 600px) {
     .home {
-        margin: 0 0 140px 0;
+        margin: 0 0 8.75em 0;
 
         &__background {
             height: 115vh;
@@ -381,7 +381,7 @@
 
 @media screen and (max-height: 400px) {
     .home {
-        margin: 0 0 245px 0;
+        margin: 0 0 15.313em 0;
 
         &__content {
             top: 35%;
@@ -396,7 +396,7 @@
 
 @media screen and (max-height: 300px) {
     .home {
-        margin: 0 0 265px 0;
+        margin: 0 0 16.563em 0;
 
         &__background {
             height: 190vh;    
@@ -409,7 +409,7 @@
     .locations {
 
         &__title {
-            margin: 0 0 30px 0;
+            margin: 0 0 1.875em 0;
         }
     }
 }

@@ -48,10 +48,10 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 40px 0 0 0;
+    padding: 2.5em 0 0 0;
     
     &__logo {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 600;
         letter-spacing: 0.05rem;
         color: #fff;
@@ -76,7 +76,7 @@ a {
 
     &__item {
         list-style: none;
-        margin: 0 0 0 30px;
+        margin: 0 0 0 1.875em;
     }
 
     &__link {
@@ -131,7 +131,7 @@ a {
 .home {
     position: relative; 
     height: 100vh;
-    margin: 0 0 160px 0;
+    margin: 0 0 8.5em 0;
     
          
 
@@ -143,18 +143,18 @@ a {
     }
 
     &__title {
-        font-size: 44px;
+        font-size: 2.75rem;
         line-height: 1.5;
         color: #fff;  
         max-width: 40rem; 
-        margin: 0 0 15px 0;        
+        margin: 0 0 0.938em 0;        
     }
 
     &__paragraph {
         color: darken($color: #fff, $amount: 20);
         max-width: 35rem; 
         line-height: 1.7;
-        margin: 0 0 30px 0;
+        margin: 0 0 1.875em 0;
     }
 
     &__background {
@@ -217,8 +217,8 @@ a {
     }
 
     &__title {
-        font-size: 16px;
-        margin: 0 0 5px 0;
+        font-size: 1rem;
+        margin: 0 0 0.313em 0;
         color: lighten($color: #000000, $amount: 20);
     }
 
@@ -257,9 +257,9 @@ a {
     &__title {
         max-width: 30%;
         line-height: 1.8;
-        font-size: 32px;
+        font-size: 2rem;
         color: lighten($color: #000000, $amount: 15);
-        margin: 0 0 60px 0;
+        margin: 0 0 2.55em 0;
     }
 
     &__title::after {
@@ -293,18 +293,18 @@ a {
         -ms-transform: rotate(135deg);
             transform: rotate(135deg);
         -webkit-transform: rotate(135deg);
-        margin: 0 0 20px 0;
+        margin: 0 0 1.25em 0;
     }
 
     &__button--next {
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
-        margin: 0 0 20px 60px;
+        margin: 0 0 1.25em 3.75em;
     }
 
     &__item {
-        margin: 0 15px 70px 0;
+        margin: 0 0.938em 4.375em 0;
     }
 
     &__item:hover {
@@ -321,30 +321,30 @@ a {
     }
 
     &__icon {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 600;
         color: lighten($color: #000000, $amount: 30);
-        margin: 0 20px 0 0;
+        margin: 0 1.25em 0 0;
     }
 
     &__icon i {
-        font-size: 14px;
+        font-size: 0.875rem;
         color: darken($color: #fff, $amount: 25);
     }
 
     &__number {
-        font-size: 13px;
+        font-size: 0.813rem;
         color: darken($color: #fff, $amount: 40);
     }
 
     &__address,
     &__description {
-        font-size: 13px;  
+        font-size: 0.813rem;  
     }
 
     &__description {
         font-weight: 600;
-        font-size: 14px;
+        font-size: 0.875rem;
         color: lighten($color: #000000, $amount: 30);
     }
 }
@@ -366,7 +366,7 @@ a {
     display: block; 
     -webkit-filter: brightness(1); 
             filter: brightness(1);
-    margin: 0 0 8px 0;
+    margin: 0 0 0.5em 0;
 
     &__container {
         position: relative;
@@ -392,7 +392,7 @@ a {
 
     &__link {
         color: white;
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -407,7 +407,7 @@ a {
   
 .locations .tns-controls {
     margin-left: 75%;
-    margin-bottom: 15px;
+    margin-bottom: 0.938em;
     outline: none;
 }
 
@@ -420,8 +420,8 @@ a {
 
 /* === About === */
 .about {
-    padding: 150px 0 110px 0;
-    margin: 0 0 80px 0;
+    padding: 9.375em 0 6.875em 0;
+    margin: 0 0 5em 0;
     background-color: darken($color: #ffffff, $amount: 5);
 
     &__container {
@@ -441,8 +441,8 @@ a {
 
     &__title {
         max-width: 70%;
-        margin: 0 0 20px 0;
-        font-size: 28px;
+        margin: 0 0 1.25em 0;
+        font-size: 1.75rem;
         color: lighten($color: #000000, $amount: 30);
         grid-area: title;
         line-height: 1.8;
@@ -465,7 +465,7 @@ a {
     }
 
     &__img {
-        margin: 0 35px 0 0;
+        margin: 0 2.188em 0 0;
         border-radius: 5px;
         max-width: 90%;
         -o-object-fit: cover;
@@ -476,13 +476,13 @@ a {
 
 /* === Blog === */
 .blog {
-    margin: 0 0 80px 0;
+    margin: 0 0 5em 0;
 
     &__title {
         line-height: 1.8;
-        font-size: 32px;
+        font-size: 2rem;
         color: lighten($color: #000000, $amount: 15);
-        margin: 0 auto 60px auto;
+        margin: 0 auto 3.75em auto;
         text-align: center        
     }
 
@@ -516,7 +516,7 @@ a {
             height: 50%;
             -o-object-fit: cover;
                object-fit: cover;
-            margin: 0 0 8px 0;
+            margin: 0 0 0.5em 0;
             border-top-left-radius: 4px;
             border-top-right-radius: 4px;
             -webkit-box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
@@ -526,28 +526,28 @@ a {
         &__title {
             text-align: center;
             color: lighten($color: #000000, $amount: 25);
-            font-size: 16px;
-            padding: 0 6px 0 6px;  
-            margin: 0 0 15px 0;        
+            font-size: 1rem;
+            padding: 0 0.375em 0 0.375em;  
+            margin: 0 0 0.938em 0;        
         }
 
         &__paragraph {
             text-align: center;
             color: lighten($color: #000000, $amount: 30);
-            font-size: 14px;
-            padding: 0 20px; 
-            margin: 0 0 15px 0;     
+            font-size: 0.875rem;
+            padding: 0 1.25em; 
+            margin: 0 0 0.938em 0;     
         }
 
         &__btn {
             color: #50A890;
             border: 1px solid #50A890;
-            font-size: 13px;
+            font-size: 0.813rem;
             padding: 5px 15px;
             text-align: center;
             display: block;
             width: 110px;
-            margin: 0 auto 25px auto;
+            margin: 0 auto 1.563em auto;
             -webkit-transition: ease 0.1s;
             -o-transition: ease 0.1s;
             transition: ease 0.1s;
@@ -563,7 +563,7 @@ a {
 /* === Contact === */
 .contact {
     background-color: darken($color: #F5F5F5, $amount: 3);
-    padding: 20px 0 60px 0;
+    padding: 1.25em 0 3.75em 0;
 
     &__container {
         display: -webkit-box;
@@ -577,9 +577,9 @@ a {
 
     &__title {
         line-height: 1.8;
-        font-size: 32px;
+        font-size: 2rem;
         color: lighten($color: #000000, $amount: 30);
-        margin: 60px 0 20px 0;      
+        margin: 2.55em 0 1.25em 0;      
     }
 
     &__title::after {
@@ -591,7 +591,7 @@ a {
     }
 
     &__paragraph {
-        margin: 0 0 20px 0;
+        margin: 0 0 1.25em 0;
         color: lighten($color: #000000, $amount: 40);
     }
 
@@ -600,9 +600,9 @@ a {
         &__title {
             text-transform: uppercase;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 0.875rem;
             letter-spacing: 0.1ch;
-            margin: 0 0 5px 0;
+            margin: 0 0 0.313em 0;
             color: lighten($color: #000000, $amount: 30);
         }
 
@@ -614,7 +614,7 @@ a {
                 -ms-flex-pack: justify;
                     justify-content: space-between;
             width: 90%;
-            margin: 0 40px 20px 0;
+            margin: 0 2.5em 1.25em 0;
         }
 
         &__label {
@@ -634,7 +634,7 @@ a {
             background-color: #fff;
             border-radius: 3px;
             resize: none;
-            margin: 0 0 15px 0;
+            margin: 0 0 0.938em 0;
             padding: 0.625em 1.25em;
         }
 
@@ -647,7 +647,7 @@ a {
             background-color: #5BC0A9; 
             border-radius: 3px;
             color: #fff;
-            font-size: 16px;
+            font-size: 1rem;
             cursor: pointer;
             -webkit-transition: ease 0.1s;
             -o-transition: ease 0.1s;
@@ -662,33 +662,33 @@ a {
     .sidebar {
         background-color: #F5F5F5;
         width: 30%;
-        padding: 20px;
-        margin: 60px 0; 
+        padding: 1.25em;
+        margin: 3.75em 0; 
         
         &__items {
-            margin: 0 0 25px 0;
+            margin: 0 0 1.563em 0;
         }
 
         &__item {
-            margin: 0 0 15px 0;
+            margin: 0 0 0.938em 0;
         }
 
         &__title {
             color:  darken($color: #5BC0A9, $amount: 30);
-            font-size: 18px;
+            font-size: 1.125rem;
             letter-spacing: 0.06ch;   
-            margin: 0 0 5px 0;
+            margin: 0 0 0.313em 0;
         }
 
         &__paragraph {
-            margin: 0 0 3px 0;
+            margin: 0 0 0.313em 0;
         }
 
         &__icon {
             width: 40px;
             height: 40px;
             cursor: pointer;
-            margin: 0 15px 0 0;
+            margin: 0 0.938em 0 0;
         }
     }
 }
@@ -709,7 +709,7 @@ a {
 
     &__copy {
         color: #fff;
-        font-size: 19px;
+        font-size: 1.188rem;
         text-align: center;
     }
 
@@ -723,7 +723,7 @@ a {
 
 @import 'animate';
 @import 'responsive';
-@import 'utilities';
+
 
 
 
