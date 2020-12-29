@@ -276,7 +276,8 @@
             flex-direction: column;
         }
 
-        &__middle {
+        &__middle,
+        .sidebar {
             width: 100%;
         }
     }
@@ -284,6 +285,7 @@
 
 @media(max-width: 750px) {
     .contact {
+        padding: 0;
 
         &__title {
             font-size: 26px;          

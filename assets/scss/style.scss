@@ -590,7 +590,33 @@ a {
         background-color: #F5F5F5;
         width: 30%;
         padding: 20px;
-        margin: 60px 0;  
+        margin: 60px 0; 
+        
+        &__items {
+            margin: 0 0 25px 0;
+        }
+
+        &__item {
+            margin: 0 0 15px 0;
+        }
+
+        &__title {
+            color:  darken($color: #5BC0A9, $amount: 30);
+            font-size: 18px;
+            letter-spacing: 0.06ch;   
+            margin: 0 0 5px 0;
+        }
+
+        &__paragraph {
+            margin: 0 0 3px 0;
+        }
+
+        &__icon {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            margin: 0 15px 0 0;
+        }
     }
 }
 
