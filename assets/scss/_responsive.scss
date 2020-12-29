@@ -102,10 +102,12 @@
 }
 
 @media screen and (max-width: 320px) {
-    .home {
-
         &__title {
             font-size: 24px;
+        }
+
+        &__background {
+            height: 110vh;   
         }
     }
 }
@@ -144,9 +146,13 @@
             grid-template-columns: 1fr;
         }
 
+        &__title {
+            margin: 0 0 30px 0;
+        }
+
         &__img {
             
-            margin: 0 20px 0px 0;
+            margin: 0 20px 15px 0;
         }
 
         &__paragraph {
@@ -158,12 +164,12 @@
 @media screen and (max-width: 800px) {
     .about {
 
-        padding: 60px 0 110px 0;
+        padding: 60px 0 80px 0;
 
         &__title {
             max-width: 100%;
             font-size: 24px;
-            order: 1;
+            line-height: 1.6;
         }
 
         &__img {
@@ -339,7 +345,8 @@
     .home {
 
         &__background {
-            height: 150vh;
+            height: 140vh;
+            
         }
     }
 }

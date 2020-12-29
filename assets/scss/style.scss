@@ -380,8 +380,8 @@ a {
         grid-template-areas: "img title"
                        "img  paragraph";
                        
-        grid-template-rows: 1fr auto;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto 1fr;
     }
 
     &__title {
