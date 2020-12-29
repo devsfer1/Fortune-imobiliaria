@@ -572,7 +572,6 @@ a {
 
         &__btn {
             display: block;
-            margin-left: 71%;
             height: 40px;
             width: 160px;
             border: none;
@@ -582,6 +581,11 @@ a {
             color: #fff;
             font-size: 16px;
             cursor: pointer;
+            transition: ease 0.1s;
+        }
+
+        &__btn:hover {
+            background-color: darken($color: #5BC0A9, $amount: 10);    
         }
     }
 
