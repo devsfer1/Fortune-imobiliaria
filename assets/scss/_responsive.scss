@@ -212,6 +212,42 @@
     }
 }
 
+/* === Blog === */
+@media screen and (max-width: 1250px) {
+    .blog {
+
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 3vw;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .blog {
+
+        &__title {
+            font-size: 26px;   
+        }
+
+        &__container {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 7vw;
+        }
+
+        .post {
+            width: 90%;
+            height: auto;
+
+            &__btn {
+                margin: 0 auto 15px auto;
+            }
+        }
+
+        
+    }
+}
+
 
 
 /* === Adjust Portrait === */
