@@ -248,6 +248,74 @@
     }
 }
 
+/* === Contact === */
+@media(max-width: 1300px) {
+    .contact {
+
+        .form {
+
+            &__flex {
+                max-width: 80%;
+            }
+
+            &__textarea {
+                width: 80%;
+            }
+    
+            &__label {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1050px) {
+    .contact {
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__middle {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 750px) {
+    .contact {
+
+        &__title {
+            font-size: 26px;          
+        }
+
+        .form {
+
+            &__flex {
+                flex-direction: column;
+                max-width: 100%;
+            }
+
+            &__item {
+                margin: 0 0 20px 0;
+                
+            }
+
+            &__label {
+                width: 110%;
+            }
+
+            &__textarea {
+                height: 120px;
+                width: 100%;
+            }
+
+            &__btn {
+                margin: 0;
+            }
+        }
+    }
+}
 
 
 /* === Adjust Portrait === */
@@ -259,3 +327,4 @@
         }
     }
 }
+
