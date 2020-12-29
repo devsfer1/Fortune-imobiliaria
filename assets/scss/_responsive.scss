@@ -111,44 +111,6 @@
 }
 
 
-/* === About === */
-@media screen and (max-width: 1125px) {
-    .about {
-
-        &__container {
-            flex-wrap: wrap;
-        }
-
-        &__img {
-            max-width: 100%;
-            margin: 0 0 20px 0;
-        }
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .about {
-
-        padding: 60px 0 110px 0;
-
-        &__title {
-            max-width: 95%;
-            font-size: 26px;
-            order: 1;
-        }
-
-        &__img {
-            order: 2;
-        }
-
-        &__paragraph {
-            font-size: 14px;
-            max-width: 100%;
-            order: 3;
-        }
-    }
-}
-
 /* === Locations === */
 @media screen and (max-width: 1024px) {
     .locations {
@@ -165,6 +127,53 @@
 
         &__title {
             max-width: 70%;    
+        }
+    }
+}
+
+/* === About === */
+@media screen and (max-width: 1350px) {
+    .about {
+
+        &__container {
+            grid-template-areas: "title"
+                            "img"
+                            "paragraph";
+                       
+            grid-template-rows: auto auto auto;
+            grid-template-columns: 1fr;
+        }
+
+        &__img {
+            
+            margin: 0 20px 0px 0;
+        }
+
+        &__paragraph {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about {
+
+        padding: 60px 0 110px 0;
+
+        &__title {
+            max-width: 100%;
+            font-size: 24px;
+            order: 1;
+        }
+
+        &__img {
+            margin: 0 0 15px 0;
+        }
+
+        &__paragraph {
+            font-size: 14px;
+            max-width: 100%;
+            order: 3;
         }
     }
 }

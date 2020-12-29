@@ -217,7 +217,14 @@ a {
     background-color: #F5F5F5;
 
     &__container {
-        display: flex;
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-areas: "img title"
+                       "img  paragraph";
+                       
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 1fr;
         
     }
 
@@ -226,19 +233,31 @@ a {
         margin: 0 0 20px 0;
         font-size: 28px;
         color: lighten($color: #000000, $amount: 15);
+        grid-area: title;
+        line-height: 1.8;
+    }
+
+    &__title::after {
+        content: '';
+        height: 2px;
+        background-color: black;
+        width: 50%;
+        display: block;
     }
 
     &__paragraph {
         line-height: 1.9;
         color: lighten($color: #000000, $amount: 35);
         max-width: 80%;
+        grid-area: paragraph;
     }
 
     &__img {
         margin: 0 25px 0 0;
         border-radius: 5px;
-        max-width: 450px;
+        max-width: 100%;
         object-fit: cover;
+        grid-area: img;
     }
 }
 
