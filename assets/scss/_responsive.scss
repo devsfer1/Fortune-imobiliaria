@@ -3,9 +3,16 @@
     .nav {
        
         &__list {
-            flex: 100%;
-            flex-direction: column;
+            -webkit-box-flex: 100%;
+                -ms-flex: 100%;
+                    flex: 100%;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             text-align: center;
+            -webkit-transition: linear 0.205s;
+            -o-transition: linear 0.205s;
             transition: linear 0.205s;
             height: 300px;
             background-color: #fafffb;
@@ -14,7 +21,6 @@
 
         &__item {
             margin: 0;
-            
         }
 
         &__link {
@@ -23,6 +29,8 @@
         }
 
         &__bars {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
         }
 
@@ -43,7 +51,6 @@
     .home {
         
         &__content {
-            
             max-width: 80%;
         }
     
@@ -81,7 +88,8 @@
         width: 100%;
         height: 140px;
         padding: 20px 10px;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
         &__title {
             font-size: 14px;
@@ -94,7 +102,9 @@
 
         &__btn {
             padding: 0 15px;
-            flex: 60%;
+            -webkit-box-flex: 60%;
+                -ms-flex: 60%;
+                    flex: 60%;
             height: 50%;
             text-align: center;
         }
@@ -138,19 +148,21 @@
 
         &__container {
             grid-template-areas: "title"
-                            "img"
-                            "paragraph";
-                       
-            grid-template-rows: auto auto auto;
-            grid-template-columns: 1fr;
-        }
+                        "img"
+                        "paragraph";
+                   
+        -ms-grid-rows: auto auto auto;
+                   
+        grid-template-rows: auto auto auto;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
 
         &__title {
             margin: 0 0 30px 0;
         }
 
         &__img {
-            
             margin: 0 20px 15px 0;
         }
 
@@ -185,10 +197,18 @@
 @media screen and (max-width: 640px) {
 
     .locations {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 100%;
 
         &__title {
@@ -221,6 +241,7 @@
     .blog {
 
         &__container {
+            -ms-grid-columns: 1fr 3vw 1fr;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 3vw;
         }
@@ -235,6 +256,7 @@
         }
 
         &__container {
+            -ms-grid-columns: 1fr;
             grid-template-columns: repeat(1, 1fr);
             grid-gap: 7vw;
         }
@@ -277,7 +299,10 @@
     .contact {
 
         &__container {
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
         }
 
         &__middle,
@@ -317,13 +342,15 @@
         .form {
 
             &__flex {
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
                 max-width: 100%;
             }
 
             &__item {
                 margin: 0 0 20px 0;
-                
             }
 
             &__label {
